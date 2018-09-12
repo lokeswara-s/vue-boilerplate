@@ -1,0 +1,52 @@
+{
+  "name": "vue-boilerplate",
+  "version": "1.0.0",
+  "description": "A complete beginner boilerplate to start building vue js application",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "serve": "webpack",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokeswara-s/vue-boilerplate.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-js",
+    "vue",
+    "template",
+    "vuejs-boilerplate",
+    "boilerplate",
+    "vue",
+    "boilerplate",
+    "vue",
+    "beginner",
+    "template"
+  ],
+  "author": "lokeswara.sane@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lokeswara-s/vue-boilerplate/issues"
+  },
+  "homepage": "https://github.com/lokeswara-s/vue-boilerplate#readme",
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "dotenv": "^6.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-template": "^6.2.0",
+    "on-build-webpack": "^0.1.0",
+    "sass-loader": "^7.1.0",
+    "url-loader": "^1.1.1",
+    "vue-cli": "^2.9.6",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0"
+  }
+}
