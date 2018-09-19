@@ -7,11 +7,15 @@
 </template>
 
 <script>
+    import Http from '../services/Utilities/Http'
     export default {
         data(){
             return{
 
             }
+        },
+        mounted() {
+            new Http().get('/api/users', {}, {})
         }
     }
 </script>
