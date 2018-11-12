@@ -7,7 +7,7 @@
 </template>
 
 <script>
-    import Http from '../services/Utilities/Http'
+    import Http from 'Services/Utilities/Http'
     export default {
         data(){
             return{
