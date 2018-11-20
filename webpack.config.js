@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackBar = require('webpackbar');
 const {
 	VueLoaderPlugin
-} = require("vue-loader")
+} = require("vue-loader");
+const Jarvis = require('webpack-jarvis');
 
 require("dotenv").config();
 
@@ -51,6 +52,9 @@ module.exports = {
 			bodyHtmlSnippet: "<div id='root'></div>",
 		}),
 		new VueLoaderPlugin(),
-		new WebpackBar()
+		new WebpackBar(),
+		new Jarvis({
+    	port: 1337 // optional: set a port
+  	})
 	]
 }

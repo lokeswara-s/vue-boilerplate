@@ -6,6 +6,6 @@ class HomeService {
     }
 
     getUserList(){
-      
+      let userList = Http.get
     }
 }
