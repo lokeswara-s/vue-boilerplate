@@ -1,9 +1,9 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 
-import Home from 'App/Home.vue'
+import Home from 'App/Home.vue';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
     routes: [
@@ -16,8 +16,13 @@ export default new Router({
             path: '/about',
             name: 'about',
             component: () => import('../app/About.vue')
+        }, 
+        {
+            path: '/example',
+            name: 'about',
+            component: () => import('../app/Example.vue')
             // Which allows you to
             // load this component when we navigate to this page.
         }
     ]
-})
+});

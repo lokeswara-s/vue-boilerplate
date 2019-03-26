@@ -1,6 +1,6 @@
-import AppLocale from './app/AppLocale'
-import HomeLocale from './home/HomeLocale'
-import AboutLocale from './about/AboutLocale'
+import AppLocale from './app/AppLocale';
+import HomeLocale from './home/HomeLocale';
+import AboutLocale from './about/AboutLocale';
 
 
 export default {
@@ -26,4 +26,4 @@ export default {
             message: AboutLocale.ja
         }
     }
-}
+};

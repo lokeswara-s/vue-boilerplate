@@ -7,6 +7,9 @@
             <li>
                 <router-link to="/about" active-class="active" exact>About</router-link>
             </li>
+            <li>
+                <router-link to="/example" active-class="active" exact>Example</router-link>
+            </li>
         </ul>
         <router-view></router-view>
     </div>
@@ -17,9 +20,9 @@
         data(){
             return{
 
-            }
+            };
         }
-    }
+    };
 </script>
 
 <style scoped lang="scss">

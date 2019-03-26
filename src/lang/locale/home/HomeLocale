@@ -1,8 +1,10 @@
 export default {
     en: {
-        title:"Home"
+        title:"Vue Boilerplate",
+        subTitle: "A Vue boilerplate for developing small and large SPA."
     },
     ja: {
-        title: "世界"
+        title: "Vue Boilerplate",
+        subTitle: "小規模および大規模SPAを開発するためのVueボイラープレート。"
     }
 }

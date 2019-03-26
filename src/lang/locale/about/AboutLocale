@@ -1,6 +1,6 @@
 export default {
     en: {
-        title:"About"
+        title:"About this boilerplate"
     },
     ja: {
         title: "にちは"

@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackBar = require('webpackbar');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+
 const {
 	VueLoaderPlugin
 } = require("vue-loader");
@@ -8,7 +10,7 @@ const Jarvis = require('webpack-jarvis');
 
 require("dotenv").config();
 
-module.exports = {
+module.exports = {		
 		entry: path.resolve(__dirname, "src/entry.js"),
 		output: {
 			path: path.resolve(__dirname, "dist")
@@ -32,6 +34,12 @@ module.exports = {
 						"sass-loader"
 					]
 				},
+				{
+					enforce: 'pre',
+					test: /\.(js|vue)$/,
+					loader: 'eslint-loader',
+					exclude: /node_modules/,
+				}
 		]
 	},
   resolve: {
@@ -54,7 +62,7 @@ module.exports = {
 		new VueLoaderPlugin(),
 		new WebpackBar(),
 		new Jarvis({
-    	port: 1337 // optional: set a port
-  	})
+    		port: 1337 // optional: set a port
+		}),
 	]
 }
